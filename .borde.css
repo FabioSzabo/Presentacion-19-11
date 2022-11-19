@@ -1,0 +1,54 @@
+.borde{
+   justify-content: center;
+    background-color: darkslateblue;
+}
+.text {
+    color: aliceblue;
+justify-content: center;
+align-content: center;
+}
+.container-fluid {
+    justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+@media (min-width: 768px) {
+    .Container{
+     display: flex;
+     justify-content: space-between;
+    }
+
+.carrusel {
+    justify-content: center;
+    width: auto;
+    height: 200px;
+}
+.footer {
+    background-color: darkslateblue;
+}
+.titulo{
+    color: royalblue;
+    align-content: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.col-3 { 
+    background-color: darkslateblue;
+    justify-content: center;
+    display: flex;
+}
+@media(768px) {
+    .col-3 {
+        width: 50px;
+        height: auto;
+    }
+}
+.imagen {
+    width: auto;
+    height: 100px;}
+@media (min-width: 768px) {
+    .imagen {
+        width: auto;
+        height: 30px}}}
