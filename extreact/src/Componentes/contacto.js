@@ -1,8 +1,5 @@
 import '../css/Contacto.css';
-import MovimientoContacto from '../js/movimientocontacto.js'
-import anchoPagina from "../js/movimientocontacto"
-import iniciarSesion from "../js/movimientocontacto"
-import register from "../js/movimientocontacto"
+import movimientocontacto from '../js/movimientocontacto';
 
 function Contacto(){
     return(
