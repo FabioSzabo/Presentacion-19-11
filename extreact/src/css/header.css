@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+  }
+  .header {
+    text-align: center;
+    padding: 20px;
+    background-image: url(https://cope-cdnmed.agilecontent.com/resources/jpg/4/4/1589385525244.jpg);  
+    background-position: center;
+    background-repeat: repeat-x;
+    display: flex;
+  }
+  .itemheader{
+  flex: 33%;
+  text-align: center;
+  }
+  .tituloColor{
+    justify-content: baseline;
+    border: 2px white;
+    margin: auto;
+    outline: 10px #cc0c0c;    
+  }
+  .textitle {
+    color: white;
+  justify-content: center;
+  text-align: center;
+  font-family:'Times New Roman';
+  }
+  .textsubtitle {
+    color: white;
+  justify-content: center;
+  text-align: center;
+  font-family:'Times New Roman';
+  }
+  .imagentitle{
+    width: 150px;
+    height: 150px;
+  }
+  .changemode svg{
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border-radius: 10px;
+    }
+    @media screen and (max-width: 800px) {
+        .textitle {
+          font-size: 30px;
+        }
+        .textsubtitle {
+            font-size: 10px;
+        }
+        .imagentitle{
+            width: 100px;
+            height: 100px;
+        }
+    }
+

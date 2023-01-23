@@ -1,0 +1,41 @@
+.imagenfooter{
+    width: 150px;
+    height: 150px;
+    }
+.fa-brands{
+    font-size: 64px;
+    color: #e7e7f0d8
+    }
+    .TextoFooter{
+        color: #e7e7f0d8;
+        justify-content: center;
+        text-align: center;
+        font-size: 40px;
+        font-family:'Times New Roman' ;
+        }
+        .textfooternew{
+        color: #042133;
+        justify-content: center;
+        text-align: center;
+        font-size: 40px;
+        font-family:'Times New Roman' ;
+        }
+.footer {
+            text-align: center;
+            display: flex;
+          }
+.itemfooter{
+            flex: 33%;
+          }
+          @media screen and (max-width: 800px) {
+            .TextoFooter{
+              font-size: 30px;
+            }
+            .imagenfooter{
+              width: 100px;
+              height: 100px;
+            }
+            .fa-brands{
+            font-size: 40px;
+            }
+        }

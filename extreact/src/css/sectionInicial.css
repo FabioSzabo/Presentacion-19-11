@@ -1,0 +1,19 @@
+.containerniveles{
+    display: flex;
+  }
+  .nivel {
+  flex: 33% ; 
+  text-align: center;
+    }
+    @media screen and (max-width: 800px) {
+      .containerniveles{
+        flex-direction: column;
+      }
+      .nivel {
+          flex: 100%;
+        }
+    }
+.TituloCard{
+        display: block;
+        text-align: center;
+    }
