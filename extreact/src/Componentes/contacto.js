@@ -1,5 +1,4 @@
 import '../css/Contacto.css';
-import movimientocontacto from '../js/movimientocontacto';
 
 function Contacto(){
     return(

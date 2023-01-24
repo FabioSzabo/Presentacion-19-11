@@ -9,6 +9,12 @@
     background-repeat: repeat-x;
     display: flex;
   }
+  .negro{
+    color: black;
+    justify-content: center;
+    text-align: center;
+    font-family:'Times New Roman';
+  }
   .itemheader{
   flex: 33%;
   text-align: center;

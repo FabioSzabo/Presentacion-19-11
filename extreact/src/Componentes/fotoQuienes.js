@@ -13,19 +13,19 @@ function FotoQuienes (){
             <div class="carousel-item active" data-bs-interval="10000">
               <img src={imagenes.personal} class="d-block w-100"/>
               <div class="carousel-caption d-none d-md-block">
-                <h5 class="h5">Personal administrativo</h5>
+                <h5 class="h4">Personal administrativo</h5>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
               <img src={imagenes.personal1} class="d-block w-100"/>
               <div class="carousel-caption d-none d-md-block">
-                <h5 class="h5">Personal primario</h5>
+                <h5 class="h4">Personal primario</h5>
               </div>
             </div>
             <div class="carousel-item">
               <img src={imagenes.personal2} class="d-block w-100" alt="imagenes\Plantel docentes especiales.jpg"/>
               <div class="carousel-caption d-none d-md-block">
-                <h5 class="h5">Personal secundario</h5>
+                <h5 class="h4">Personal secundario</h5>
               </div>
             </div>
           </div>

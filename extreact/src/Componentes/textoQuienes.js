@@ -4,7 +4,7 @@ function TextoQuienes (){
     return(
         <section className='color2'>
         <h2 class="tituloquienes">¿Quienes somos?</h2>
-        <div class="carrusel color2">
+        <div class="carrusel">
           <div>
             <div id="carouselExampleControls" class="carousel slide class= col-md-6 float-md-end mb-3 ms-md-3" data-bs-ride="carousel">
               <div class="carousel-inner">
@@ -27,7 +27,7 @@ function TextoQuienes (){
                 <span class="visually-hidden">Next</span>
               </button>
             </div>          
-            <p id="text" class="h5">
+            <p id="text" class="h4 colortext">
               El Instituto Nuestra Señora de Lujan surgió del intercambio de ideas entre el Pbro. Manuel Ballesteros González (primer representante legal  y Párroco de la Parroquia Nuestra Señora de Luján), y el Prof. Dr. Otto William Matheus sobre la educación. 
               Su fundación obedece a que Villa Luján, era una zona densamente poblada por familias de clase media y un gran número de jóvenes de ambos sexos que deseaban continuar sus estudios secundario y los colegios que existían entonces se encontraban muy alejados del barrio.
               Atendiendo estas necesidades, comenzó su tarea un 13 de marzo de 1961, siendo su primer representante legal el Pbro. Manuel Ballesteros González. 

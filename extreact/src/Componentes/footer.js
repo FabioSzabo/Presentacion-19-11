@@ -1,6 +1,7 @@
 import '../css/footer.css';
 import logo from '../imagenes proyecto/LogoColegio.png'
 import { Link } from 'react-router-dom';
+import { useRef } from 'react';
 function final(){
     return(
         <footer>

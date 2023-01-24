@@ -1,5 +1,4 @@
 import '../css/Login.css'
-import MovimientoLogin from '../js/movimiento'
 function Login(){
     return(
         <body>

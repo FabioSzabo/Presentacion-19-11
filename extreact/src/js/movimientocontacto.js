@@ -9,8 +9,6 @@ const FormularioLogin=document.querySelector(".FormLogin");
 const FormularioRegister=document.querySelector(".FormRegister");
 const CajaTraseraLogin=document.querySelector(".CajaTraseraLogin");
 const CajaTraseraRegister=document.querySelector(".CajaTraseraRegister");
-}
-
 function anchoPagina(){
     if(window.innerWidth > 850){
         CajaTraseraLogin.style.display = "block";
@@ -64,4 +62,5 @@ function register(){
     }
     
     }
-export default {MovimientoContacto, anchoPagina, iniciarSesion, register};
+}
+export default {MovimientoContacto};
