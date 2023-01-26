@@ -13,7 +13,12 @@ import nosotros2 from '../imagenes proyecto/nosotros2.jpg'
 import jardin1 from '../imagenes proyecto/jardin1.jpeg'
 import jardin2 from '../imagenes proyecto/jardin2.jpeg'
 import jardin3 from '../imagenes proyecto/jardin3.jpeg'
-
+import prim1 from '../imagenes proyecto/prim1.jpeg'
+import prim2 from '../imagenes proyecto/prim2.jpeg'
+import prim3 from '../imagenes proyecto/prim3.jpeg'
+import sec1 from '../imagenes proyecto/sec1.jpeg'
+import sec2 from '../imagenes proyecto/sec2.jpeg'
+import sec3 from '../imagenes proyecto/sec3.jpeg'
 export default {
     "carrouselPrin":principal ,
     "carrouselPrin1":principal2 ,
@@ -30,4 +35,10 @@ export default {
     "jardin1":jardin1,
     "jardin2":jardin2,
     "jardin3":jardin3, 
+    "prim1":prim1,
+    "prim2":prim2,
+    "prim3":prim3,
+    "sec1":sec1,
+    "sec2":sec2,
+    "sec3":sec3,
 }

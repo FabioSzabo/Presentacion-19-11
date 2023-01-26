@@ -11,7 +11,7 @@ return(
 <Router>
     <switch>
         <Route exac path="/home" component={PagPrinc}/>
-        <Route exac path="" component={PagPrinc}/>
+        <Route exac path="/" component={PagPrinc}/>
         <Route exac path="/contacto" component={PagContacto}/>
         <Route exac path="/login" component={PagCampus}/>
         <Route exac path="/nosotros" component={PagQuienes}/>

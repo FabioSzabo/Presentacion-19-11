@@ -1,10 +1,16 @@
 import React from 'react';
-import video from '../videos/VideoJardin.mp4'
 import  ReactPlayer  from  'react-player'
 function Videojardin(){
     return(
        <>
-       <ReactPlayer url={video} controls loop />
+       <ReactPlayer 
+       url={require('../videos/VideoJardin.mp4')}
+       controls
+       loop
+       playing
+       volume={0.5}
+       width="100%"
+       height="100%"/>
          </>
     )
     
