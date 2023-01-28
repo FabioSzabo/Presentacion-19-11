@@ -5,15 +5,15 @@ function TextoP (){
   const Referencias=useRef()
   useEffect=()=>{
     if(localStorage.getItem("darkmode") === 1){
-      Referencias.current.classList.remove("colortext");
-      Referencias.current.classList.add("colortextnew");
+      Referencias.current.classNameList.remove("colortext");
+      Referencias.current.classNameList.add("colortextnew");
     }else{
-      Referencias.current.classList.remove("colortextnew");
-      Referencias.current.classList.add("colortext");
+      Referencias.current.classNameList.remove("colortextnew");
+      Referencias.current.classNameList.add("colortext");
     }
   }
     return(
-        <section id="body" class="color2">
+        <section id="body" className="color2">
         <div className=" central">
           <div className="columnmiddle carrusel">
             <div className="clearfix">
@@ -73,15 +73,15 @@ function TextoP (){
              </div> 
             </a> 
             </div>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="card border-info">
-                  <div class="iconitos">
-                    <i class="fa-solid fa-location-dot fa-2x"></i>
+        <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <div className="card border-info">
+                  <div className="iconitos">
+                    <i className="fa-solid fa-location-dot fa-2x"></i>
                     </div>
-                     <div class="contenido">
-                       <h3 class="TituloCard">UBICACION</h3>
+                     <div className="contenido">
+                       <h3 className="TituloCard">UBICACION</h3>
                        <br/>
                        <p> ¿Queres conocer nuestra institucion? 
                          <br/> <br/>
@@ -92,13 +92,13 @@ function TextoP (){
                     </div>
                   </div>
               </div>
-              <div class="carousel-item">
-                <div class="card border-info">
-                <div class="iconitos">
-                  <i class="fa-solid fa-school fa-2x"></i>
+              <div className="carousel-item">
+                <div className="card border-info">
+                <div className="iconitos">
+                  <i className="fa-solid fa-school fa-2x"></i>
                   </div>
                   <div>
-                 <h3 class="TituloCard">HORARIOS ESCOLARES</h3>
+                 <h3 className="TituloCard">HORARIOS ESCOLARES</h3>
                 <br/>
                 <p> Nivel Inicial
                    Turno mañana y tarde 
@@ -115,13 +115,13 @@ function TextoP (){
                 </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Next</span>
             </button>
           </div>
           </div>

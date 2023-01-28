@@ -1,24 +1,9 @@
 import '../css/Login.css'
 import {useEffect, useRef, useState} from "react"
+import { registro, login } from '../Service/apiCall';
 function Login(){
 
-function anchoPagina(){
-    if(window.innerWidth > 850){
-        CajaTraseraLogin.style.display = "block";
-        CajaTraseraRegister.style.display= "block";
-    }else{
-        CajaTraseraRegister.style.display = "block";
-        CajaTraseraRegister.style.opacity = "1";
-        CajaTraseraLogin.style.display = "none";
-        FormularioLogin.style.display = "block";
-        FormularioRegister.style.display = "none";
-        ContenedorLoginRegister.style.left = "0px";
-    }
-    
-}
-useEffect(()=>{
-    window.addEventListener("resize",anchoPagina)
-})
+
 const ContenedorLoginRegister=useRef();
 const FormularioLogin=useRef();
 const FormularioRegister=useRef();
@@ -61,29 +46,48 @@ function register(){
 
     }}
 
-    const [formValue,setFormValues] =useState({
+    const [formValues,setFormValues] =useState({  //register
         email:'',
         password:'',
-        firstname:'',
+        firstname:''
     });
     const handleChange =(event)=>{  
     setFormValues({
-    ...formValue,
+    ...formValues,
     [event.target.name]:event.target.value  //para evitar que se pierda algun valor en el caso de alterar uno solo//
   })}
     const handleSubmit =(event)=>{
-     event.preventDefault(); //evitar que se reinicialice por defecto//
-    //const GuardarUsuario=()=>{
-
+     event.preventDefault();
+    const GuardarUsuario=()=>{
+        registro(formValues).then(()=>{
+            console.log("Registrado");}).catch((error)=>alert("Error al registrar"))
+        }
+        GuardarUsuario();
     }
-   //GuardarUsuario;
+    const [formValue,setFormValue] =useState({  //login
+        email:'',
+        password:''
+    });
+    const manejoCambios =(event)=>{  
+        setFormValue({
+        ...formValue,
+        [event.target.name]:event.target.value  //para evitar que se pierda algun valor en el caso de alterar uno solo//
+      })}
+    const enviar =(event)=>{
+        event.preventDefault();
+       const ObtenerAlumno=()=>{
+        login(formValue).then(()=>{
+               console.log("Ingresado");}).catch((error)=>alert("Error al ingresar"))
+           }
+           ObtenerAlumno();
+       }
 
     return(
         <body>
     <main>
-        <div class="contenedor">
-            <div class="CajaTrasera">
-                <div ref={CajaTraseraLogin} class="CajaTraseraLogin">
+        <div className="contenedor">
+            <div className="CajaTrasera">
+                <div ref={CajaTraseraLogin} className="CajaTraseraLogin">
                     <h3>
                         ¿Ya tienes una cuenta?
                     </h3>
@@ -94,7 +98,7 @@ function register(){
                         Iniciar Sesión
                     </button>
                 </div>
-                <div ref={CajaTraseraRegister} class="CajaTraseraRegister">
+                <div ref={CajaTraseraRegister} className="CajaTraseraRegister">
                     <h3>
                         ¿Aún no tienes una cuenta?
                     </h3>
@@ -107,22 +111,22 @@ function register(){
                 </div>
             </div>
 
-            <div ref={ContenedorLoginRegister} class="ContenedorLoginRegister">
-                <form ref={FormularioLogin} class="FormLogin">
+            <div ref={ContenedorLoginRegister} className="ContenedorLoginRegister">
+                <form onSubmit={enviar} ref={FormularioLogin} className="FormLogin">
                     <h2>
                         Iniciar Sesión
                     </h2>
-                    <input type="text" placeholder="Usuario" id="username"/>
-                    <input type="password" placeholder="Contraseña" id="password"/>
-                    <button id="BotonInicioSesion">Entrar</button>
+                    <input type="email" placeholder="Correo Electronico" name='email' value={formValue.email} onChange={manejoCambios} required />
+                    <input  type="password" placeholder="Password" name='password' value={formValue.password} onChange={manejoCambios} required/>
+                    <button >Entrar</button>
                 </form>
-                <form onSubmit={handleSubmit} ref={FormularioRegister} class="FormRegister">
+                <form onSubmit={handleSubmit} ref={FormularioRegister} className="FormRegister">
                     <h2>
                         Registrarse
                     </h2>
-                    <input type="email" placeholder="Correo Electronico" name='email' value={formValue.email} onChange={handleChange} required />
-                    <input  type="password" name='password' value={formValue.password} onChange={handleChange} required/>
-                    <input  type="text" name='Nombre' value={formValue.firstname} onChange={handleChange} required/>
+                    <input type="email" placeholder="Correo Electronico" name='email' value={formValues.email} onChange={handleChange} required />
+                    <input  type="password" placeholder="Password" name='password' value={formValues.password} onChange={handleChange} required/>
+                    <input  type="text" placeholder="First Name" name='firstname' value={formValues.firstname} onChange={handleChange} required/>
 
                     <button>Registrarse</button>
                 </form>

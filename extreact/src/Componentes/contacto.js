@@ -1,24 +1,7 @@
 import '../css/Contacto.css';
-import {useRef,useEffect} from "react"
+import {useRef,} from "react"
 
 function Contacto(){
-    function anchoPagina(){
-        if(window.innerWidth > 850){
-            CajaTraseraLogin.style.display = "block";
-            CajaTraseraRegister.style.display= "block";
-        }else{
-            CajaTraseraRegister.style.display = "block";
-            CajaTraseraRegister.style.opacity = "1";
-            CajaTraseraLogin.style.display = "none";
-            FormularioLogin.style.display = "block";
-            FormularioRegister.style.display = "none";
-            ContenedorLoginRegister.style.left = "0px";
-        }
-        
-    }
-    useEffect(()=>{
-        window.addEventListener("resize",anchoPagina)
-    })
 const ContenedorLoginRegister=useRef();
 const FormularioLogin=useRef();
 const FormularioRegister=useRef();
@@ -61,11 +44,11 @@ function register(){
     }}
 
     return(
-        <body class="fondo">
+        <body className="fondo">
         <main>
-          <div class="contenedor">
-              <div class="CajaTrasera">
-                  <div ref={CajaTraseraLogin} class="CajaTraseraLogin">
+          <div className="contenedor">
+              <div className="CajaTrasera">
+                  <div ref={CajaTraseraLogin} className="CajaTraseraLogin">
                       <h3>
                           ¿Preferis que te contactemos?
                       </h3>
@@ -76,7 +59,7 @@ function register(){
                           Contacto
                       </button>
                   </div>
-                  <div ref={CajaTraseraRegister} class="CajaTraseraRegister">
+                  <div ref={CajaTraseraRegister} className="CajaTraseraRegister">
                       <h3>
                           ¿Tienes alguna consulta?
                       </h3>
@@ -89,8 +72,8 @@ function register(){
                   </div>
               </div>
     
-              <div ref={ContenedorLoginRegister} class="ContenedorLoginRegister">
-                  <form ref={FormularioLogin} class="FormLogin">
+              <div ref={ContenedorLoginRegister} className="ContenedorLoginRegister">
+                  <form ref={FormularioLogin} className="FormLogin">
                       <h2>
                           Datos de contacto
                       </h2>
@@ -98,7 +81,7 @@ function register(){
                       <input type="text" placeholder="Numero de contacto" id="password"/>
                       <button id="Register">Continuar</button>
                   </form>
-                  <form ref={FormularioRegister} class="FormRegister">
+                  <form ref={FormularioRegister} className="FormRegister">
                       <h2>
                           Consulta
                       </h2>
