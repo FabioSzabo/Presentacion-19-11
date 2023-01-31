@@ -2,7 +2,7 @@ import '../css/QuienesSomos.css'
 import imagenes from './imagenes'
 function TextoQuienes (){
     return(
-        <section classNameName='color2'>
+        <section className='color2'>
         <h2 className="tituloquienes">¿Quienes somos?</h2>
         <div className="carrusel">
           <div>

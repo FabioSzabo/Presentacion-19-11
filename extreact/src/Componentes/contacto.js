@@ -3,93 +3,48 @@ import {useRef,} from "react"
 
 function Contacto(){
 const ContenedorLoginRegister=useRef();
-const FormularioLogin=useRef();
 const FormularioRegister=useRef();
-const CajaTraseraLogin=useRef();
+const Texto=useRef();
+const Texto1=useRef();
+const Texto2=useRef();
 const CajaTraseraRegister=useRef();
-function iniciarsesion(){
-    if(window.innerWidth > 850){
-        FormularioRegister.current.style.display = "none";
-        ContenedorLoginRegister.current.style.left = "10px";
-        FormularioLogin.current.style.display="block";
-        CajaTraseraRegister.current.style.opacity = "1";
-        CajaTraseraLogin.current.style.opacity="0";
-
-    }else{
-        FormularioRegister.current.style.display = "none";
-        ContenedorLoginRegister.current.style.left = "0px";
-        ContenedorLoginRegister.current.style.left = "0px";
-        FormularioLogin.current.style.display="block";
-        CajaTraseraRegister.current.style.display ="block";
-        CajaTraseraLogin.current.style.display="none";
-
-    }
-    }
-
 function register(){
     if(window.innerWidth > 850){
         FormularioRegister.current.style.display = "block";
         ContenedorLoginRegister.current.style.left = "410px";
-    FormularioLogin.current.style.display="none";
-    CajaTraseraRegister.current.style.opacity = "0";
-    CajaTraseraLogin.current.style.opacity="1";
-
-    } else{
-        FormularioRegister.current.style.display = "block";
-    ContenedorLoginRegister.current.style.left = "0px";
-    FormularioLogin.current.style.display="none";
-    CajaTraseraRegister.current.style.display = "none";
-    CajaTraseraLogin.current.style.display="block";
-    CajaTraseraLogin.current.style.opacity="1";  
-    }}
-
+    CajaTraseraRegister.current.style.display = "0";
+    Texto.current.style.display= "none";
+    Texto1.current.style.display= "none";
+    Texto2.current.style.display= "none";
+}}
     return(
         <body className="fondo">
+            <br/><br/><br/><br/><br/>
         <main>
           <div className="contenedor">
               <div className="CajaTrasera">
-                  <div ref={CajaTraseraLogin} className="CajaTraseraLogin">
-                      <h3>
-                          ¿Preferis que te contactemos?
-                      </h3>
-                      <p>
-                          No te preocupes, deja tu contacto y nos comunicaremos con vos 
-                      </p>
-                      <button onClick={iniciarsesion} id="IniciarSesion">
-                          Contacto
-                      </button>
-                  </div>
                   <div ref={CajaTraseraRegister} className="CajaTraseraRegister">
-                      <h3>
+                      <h3 ref={Texto2}>
                           ¿Tienes alguna consulta?
                       </h3>
-                      <p>
+                      <p ref={Texto1}>
                           Dejala aca y nos contactaremos con vos
                       </p>
-                      <button onClick={register} id="Register">
-                          Consulta
+                      <button ref={Texto} onClick={register} id="Register">
+                      Consulta
                       </button>
                   </div>
               </div>
-    
               <div ref={ContenedorLoginRegister} className="ContenedorLoginRegister">
-                  <form ref={FormularioLogin} className="FormLogin">
-                      <h2>
-                          Datos de contacto
-                      </h2>
-                      <input type="text" placeholder="Nombre" id="username"/>
-                      <input type="text" placeholder="Numero de contacto" id="password"/>
-                      <button id="Register">Continuar</button>
-                  </form>
                   <form ref={FormularioRegister} className="FormRegister">
                       <h2>
                           Consulta
                       </h2>
                       <input type="text" placeholder="Nombre completo"/>
                       <input type="text" placeholder="Correo Electronico"/>
-                      <input type="text" placeholder="Deja tu comentario"/>
+                      <input type="text" placeholder="Deja tu consulta"/>
                       
-                      <button>Registrarse</button>
+                      <button>Enviar</button>
                   </form>
               </div>
           </div>

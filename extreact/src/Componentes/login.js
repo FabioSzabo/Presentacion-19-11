@@ -73,11 +73,12 @@ function register(){
         ...formValue,
         [event.target.name]:event.target.value  //para evitar que se pierda algun valor en el caso de alterar uno solo//
       })}
+
     const enviar =(event)=>{
         event.preventDefault();
        const ObtenerAlumno=()=>{
         login(formValue).then(()=>{
-               console.log("Ingresado");}).catch((error)=>alert("Error al ingresar"))
+               console.log("Ingresado");}).catch((error)=>alert("Alumno no registrado"))
            }
            ObtenerAlumno();
        }

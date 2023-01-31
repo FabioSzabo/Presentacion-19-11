@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import React from 'react';
 import '../css/sectionPrincipal.css';
 import imagenes from './imagenes';
 function TextoP (){
@@ -87,8 +88,8 @@ function TextoP (){
                          <br/> <br/>
                           Podes acercarte en los horarios estipulados por cualquier consulta 
                          <br/> <br/>
-                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.6419128741295!2d-65.23824128549286!3d-26.81952829578258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c58f12d5a95%3A0x6e9a3c052931a6de!2sParroquia%20Nuestra%20Se%C3%B1ora%20de%20Luj%C3%A1n!5e0!3m2!1ses-419!2sar!4v1671583761749!5m2!1ses-419!2sar" style={{border:0, width:"400px", height:"300px"}}></iframe>
-                        </p>
+                         <iframe style={{border:0, width:"400px", height:"300px"}} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25500.84255960173!2d-65.25210116747495!3d-26.811062144537104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6bda3b6ff89aadd0!2sEscuela%20e%20Instituto%20Nuestra%20Se%C3%B1ora%20de%20Luj%C3%A1n!5e0!3m2!1ses!2sar!4v1675117155276!5m2!1ses!2sar"></iframe>
+                      </p>
                     </div>
                   </div>
               </div>
