@@ -1,10 +1,16 @@
 .containerniveles{
     display: flex;
   }
-  .nivel {
+.nivel {
   flex: 33% ; 
   text-align: center;
     }
+.color1{
+      background-color: #0024f0;
+      }
+.color2{
+       background-color: #e7e7f0d8;
+      }
     @media screen and (max-width: 800px) {
       .containerniveles{
         flex-direction: column;

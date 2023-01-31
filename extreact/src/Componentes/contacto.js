@@ -1,5 +1,6 @@
 import '../css/Contacto.css';
-import {useRef,} from "react"
+import {useRef, useState,} from "react"
+import { registrar } from '../Service/apiCall';
 
 function Contacto(){
 const ContenedorLoginRegister=useRef();
@@ -17,8 +18,26 @@ function register(){
     Texto1.current.style.display= "none";
     Texto2.current.style.display= "none";
 }}
+
+const [formValues,setFormValues] = useState ({
+    email:'',
+    firstName:'',
+    coment:''
+});
+const manejoCambios =(event)=>{
+    setFormValues({
+        ...formValues,
+        [event.target.name]:event.target.value
+    })}
+const enviar =(event)=>{
+event.preventDefault();
+const GuardarComentario=()=>{
+    registrar(formValues).then(()=>{ console.log("Comentario registrado");})
+    .catch((error)=>{console.log("Error al registrar comentario")})}
+    GuardarComentario();
+}
     return(
-        <body className="fondo">
+        <section className="fondo">
             <br/><br/><br/><br/><br/>
         <main>
           <div className="contenedor">
@@ -36,13 +55,13 @@ function register(){
                   </div>
               </div>
               <div ref={ContenedorLoginRegister} className="ContenedorLoginRegister">
-                  <form ref={FormularioRegister} className="FormRegister">
+                  <form onSubmit={enviar} ref={FormularioRegister} className="FormRegister">
                       <h2>
                           Consulta
                       </h2>
-                      <input type="text" placeholder="Nombre completo"/>
-                      <input type="text" placeholder="Correo Electronico"/>
-                      <input type="text" placeholder="Deja tu consulta"/>
+                      <input type="email" placeholder="Correo Electronico" name='email' value={formValues.email} onChange={manejoCambios} required />
+                      <input  type="text" placeholder="Nombre Completo" name='firstName' value={formValues.firstName} onChange={manejoCambios} required/>
+                      <input type="text" placeholder="Deja tu consuta" name='coment' value={formValues.coment} onChange={manejoCambios} required />
                       
                       <button>Enviar</button>
                   </form>
@@ -50,7 +69,7 @@ function register(){
           </div>
       </main>
       <br/><br/><br/>
-        </body> 
+        </section> 
     )
 }
 export default Contacto

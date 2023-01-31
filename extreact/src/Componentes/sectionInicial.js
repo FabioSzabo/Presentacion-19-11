@@ -2,29 +2,32 @@ import '../css/sectionInicial.css'
 import imagenes from './imagenes'
 function SectionInicial(props){
     return(
-        <section className='color2'>
-        <h2 class="tituloquienes">¿Quienes somos?</h2>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src={imagenes.jardin1} class="d-block w-100" alt="..."/>
-    </div>
-    <div class="carousel-item">
-      <img src={imagenes.jardin2} class="d-block w-100" alt="..."/>
-    </div>
-    <div class="carousel-item">
-      <img src={imagenes.jardin3} class="d-block w-100" alt="..."/>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>        
-            <p id="text" class="h4 colortext">
+<section className='color2'>
+        <h2 className="tituloquienes">Nivel inicial</h2>
+        <div className="carrusel">
+          <div>
+            <div id="carouselExampleControls" className="carousel slide className= col-md-6 float-md-end mb-3 ms-md-3" data-bs-ride="carousel">
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <img src={imagenes.jardin1} className="d-block w-100" />
+                </div>
+                <div className="carousel-item">
+                  <img src={imagenes.jardin2} className="d-block w-100"/>
+                </div>
+                <div className="carousel-item">
+                  <img src={imagenes.jardin3} className="d-block w-100" alt="imagenes proyecto\Escáner_20171203 (13).png"/>
+                </div>
+              </div>
+              <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Previous</span>
+              </button>
+              <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Next</span>
+              </button>
+            </div>          
+            <p id="text" className="h4 colortext">
               El Instituto Nuestra Señora de Lujan surgió del intercambio de ideas entre el Pbro. Manuel Ballesteros González (primer representante legal  y Párroco de la Parroquia Nuestra Señora de Luján), y el Prof. Dr. Otto William Matheus sobre la educación. 
               Su fundación obedece a que Villa Luján, era una zona densamente poblada por familias de clase media y un gran número de jóvenes de ambos sexos que deseaban continuar sus estudios secundario y los colegios que existían entonces se encontraban muy alejados del barrio.
               Atendiendo estas necesidades, comenzó su tarea un 13 de marzo de 1961, siendo su primer representante legal el Pbro. Manuel Ballesteros González. 
@@ -34,6 +37,7 @@ function SectionInicial(props){
               que lo llevó a concretar mejoras edilicias importantes como los jardines de infantes, la sala de conferencias, el laboratorio de informática, las oficinas, la sala de audio y video y la actual fachada del edificio.
             </p>
           </div>
+        </div>
         <br/><br/>
       </section>
     )

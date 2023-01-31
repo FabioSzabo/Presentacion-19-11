@@ -9,3 +9,8 @@ export const login = async (alumno)=> {
 const respuesta  = await axios.post("http://localhost:8000/alumnos/ingreso",alumno);
 return respuesta.data;
 }
+
+export const registrar = async (comentario)=>{
+    const respuesta = await axios.post("http://localhost:8000/comentario", comentario);
+    return respuesta.data
+}
