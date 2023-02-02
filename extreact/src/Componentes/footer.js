@@ -3,7 +3,7 @@ import '../css/footer.css';
 import logo from '../imagenes proyecto/LogoColegio.png'
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
-function final(){
+function Footer(){
   const Footer=useRef()
   const TextoFooter=useRef()
 useEffect=()=>{
@@ -58,4 +58,4 @@ useEffect=()=>{
     )
 }
 
-export default final
+export default Footer

@@ -1,8 +1,8 @@
-import Titulo from "../Componentes/header.js";
-import Navbar from "../Componentes/nav.js";
-import Final from "../Componentes/footer.js";
-import SectionSec from "../Componentes/sectionSec.js";
-import Videosecundaria from "../Componentes/videosec.js";
+import Titulo from "../Componentes/header";
+import Navbar from "../Componentes/nav";
+import Footer from "../Componentes/footer";
+import SectionSec from "../Componentes/sectionSec";
+import Videosecundaria from "../Componentes/videosec";
 
 function NivelSecundario(){
 return(
@@ -11,7 +11,7 @@ return(
     <Navbar/>
     <SectionSec/>
     <Videosecundaria/>
-    <Final/>
+    <Footer/>
     </>
 )
 }

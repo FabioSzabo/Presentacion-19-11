@@ -1,17 +1,15 @@
 import Navbar from '../Componentes/nav';
 import Titulo from '../Componentes/header';
 import Footer from '../Componentes/footer'
-import TextoQuienes from '../Componentes/textoQuienes';
-import FotoQuienes from '../Componentes/fotoQuienes';
-function PagQuienes (){
+import Campus from '../Componentes/campus';
+function PagMat (){
     return(
         <>
         <Titulo/>
         <Navbar/>
-        <TextoQuienes/>
-        <FotoQuienes/>
+        <Campus/>
         <Footer/>
         </>
     )
 }
-export default PagQuienes
+export default PagMat;

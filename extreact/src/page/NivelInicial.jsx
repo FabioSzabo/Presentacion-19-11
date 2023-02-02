@@ -1,8 +1,8 @@
-import Navbar from '../Componentes/nav.js';
-import Titulo from '../Componentes/header.js';
-import Final from '../Componentes/footer.js'
-import SectionInicial from '../Componentes/sectionInicial.js';
-import Videojardin from '../Componentes/videojardin.js';
+import Navbar from '../Componentes/nav';
+import Titulo from '../Componentes/header';
+import Footer from '../Componentes/footer'
+import SectionInicial from '../Componentes/sectionInicial';
+import Videojardin from '../Componentes/videojardin';
 
 function NivelInicial(){
     return(
@@ -11,7 +11,7 @@ function NivelInicial(){
     <Navbar />
     <SectionInicial />
     <Videojardin/>
-    <Final />
+    <Footer />
     </>
     )
 }

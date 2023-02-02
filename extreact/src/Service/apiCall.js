@@ -5,10 +5,13 @@ export const registro = async (alumno)=> {
     const respuesta = await axios.post("http://localhost:8000/alumnos/registro",alumno);
     return respuesta.data;
 }
-export const login = async (alumno)=> {
-const respuesta  = await axios.post("http://localhost:8000/alumnos/ingreso",alumno);
-return respuesta.data;
+
+const login = async(alumno)=>{
+    const ingreso  = await axios.post("http://localhost:8000/alumnos/ingreso",alumno);
+    console.log(ingreso.data)
+    return ingreso.data
 }
+export{login}
 
 export const registrar = async (comentario)=>{
     const respuesta = await axios.post("http://localhost:8000/comentario", comentario);

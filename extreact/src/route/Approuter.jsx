@@ -6,19 +6,21 @@ import NivelInicial from "../page/NivelInicial"
 import NivelPrimario from "../page/NivelPrimaria"
 import NivelSecundario from "../page/NivelSecundario"
 import PagCampus from "../page/login"
+import PagMat from "../page/campus"
 const Approuter = () =>{
 return(
 <Router>
-    <switch>
-        <Route exac path="/home" component={PagPrinc}/>
-        <Route exac path="/" component={PagPrinc}/>
-        <Route exac path="/contacto" component={PagContacto}/>
-        <Route exac path="/login" component={PagCampus}/>
-        <Route exac path="/nosotros" component={PagQuienes}/>
-        <Route exac path="/jardin" component={NivelInicial}/>
-        <Route exac path="/primaria" component={NivelPrimario}/>
-        <Route exac path="/secundaria" component={NivelSecundario}/>
-    </switch>
+    <Switch>
+        <Route exact path="/home" component={PagPrinc}/>
+        <Route exact path="/campus" component={PagMat}/>
+        <Route exact path="/" component={PagPrinc}/>
+        <Route exact path="/contacto" component={PagContacto}/>
+        <Route exact path="/login" component={PagCampus}/>
+        <Route exact path="/nosotros" component={PagQuienes}/>
+        <Route exact path="/jardin" component={NivelInicial}/>
+        <Route exact path="/primaria" component={NivelPrimario}/>
+        <Route exact path="/secundaria" component={NivelSecundario}/>
+    </Switch>
 </Router>
 )
 }

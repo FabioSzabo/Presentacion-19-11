@@ -1,14 +1,14 @@
-import Navbar from '../Componentes/nav.js';
-import Titulo from '../Componentes/header.js';
-import Final from '../Componentes/footer.js'
-import Contacto from '../Componentes/contacto.js';
+import Navbar from '../Componentes/nav';
+import Titulo from '../Componentes/header';
+import Footer from '../Componentes/footer'
+import Contacto from '../Componentes/contacto';
 function PagContacto (){
     return(
         <>
         <Titulo/>
         <Navbar/>
         <Contacto/>
-        <Final/>
+        <Footer/>
         </>
     )
 }

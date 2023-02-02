@@ -2,7 +2,7 @@ import '../css/nav.css';
 import { Link } from 'react-router-dom';
 import { useRef,useEffect } from 'react';
 
-function navbar(){
+function Navbar(){
   const navbar =useRef()
   useEffect=()=>{
     if(localStorage.getItem("darkmode") === 1){
@@ -37,4 +37,4 @@ function navbar(){
     </nav>
     );
 } 
-export default navbar;
+export default Navbar;

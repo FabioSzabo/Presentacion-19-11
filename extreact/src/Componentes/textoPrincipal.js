@@ -66,6 +66,7 @@ function TextoP (){
               </div> 
             </a> 
             </div>
+            <br/>
             <div className="container">
               <a href="http://localhost:3000/login">
                 <i className="fa-solid fa-users logos" style={{fontSize:"75px"}} ></i>
@@ -74,6 +75,7 @@ function TextoP (){
              </div> 
             </a> 
             </div>
+            <br/>
         <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
             <div className="carousel-inner">
               <div className="carousel-item active">

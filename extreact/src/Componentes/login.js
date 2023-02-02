@@ -76,15 +76,16 @@ function register(){
 
     const enviar =(event)=>{
         event.preventDefault();
+        console.log(login)
        const ObtenerAlumno=()=>{
         login(formValue).then(()=>{
                console.log("Ingresado");}).catch((error)=>alert("Alumno no registrado"))
-           }
+       }
            ObtenerAlumno();
        }
 
     return(
-        <body>
+        <section>
     <main>
         <div className="contenedor">
             <div className="CajaTrasera">
@@ -137,7 +138,7 @@ function register(){
     <br/>
     <br/>
     <br/>
-</body>
+</section>
     )
 }
 export default Login

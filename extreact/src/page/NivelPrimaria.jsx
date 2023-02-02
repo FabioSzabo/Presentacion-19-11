@@ -1,6 +1,6 @@
 import Navbar from "../Componentes/nav";
 import Titulo from "../Componentes/header";
-import Final from "../Componentes/footer";
+import Footer from "../Componentes/footer";
 import SectionPrim from "../Componentes/sectionPrim";
 import Videoprimaria from "../Componentes/videoprim";
 function NivelPrimario(){
@@ -10,7 +10,7 @@ function NivelPrimario(){
         <Navbar/>
         <SectionPrim/>
         <Videoprimaria/>
-        <Final/>
+        <Footer/>
         </>
     )
 }

@@ -1,11 +1,10 @@
 import React from 'react';
-import video from "../videos/primaria.mp4"
 import  ReactPlayer  from  'react-player'
 function Videoprimaria(){
     return(
        <>
        <ReactPlayer 
-       url={video} 
+       url={"https://youtu.be/zUReOEYDiew"} 
        controls
        playing
        volume={0.5}
