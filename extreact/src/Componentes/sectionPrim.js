@@ -1,5 +1,7 @@
 import '../css/sectionPrim.css'
-import imagenes from './imagenes'
+import prim1 from '../imagenes proyecto/prim1.jpeg'
+import prim2 from '../imagenes proyecto/prim2.jpeg'
+import prim3 from '../imagenes proyecto/prim3.jpeg'
 function sectionPrim(){
     return(
       <section className='color2'>
@@ -9,13 +11,13 @@ function sectionPrim(){
           <div id="carouselExampleControls" className="carousel slide className= col-md-6 float-md-end mb-3 ms-md-3" data-bs-ride="carousel">
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <img src={imagenes.prim1} className="d-block w-100" />
+                <img src={prim1} className="d-block w-100" />
               </div>
               <div className="carousel-item">
-                <img src={imagenes.prim2} className="d-block w-100"/>
+                <img src={prim2} className="d-block w-100"/>
               </div>
               <div className="carousel-item">
-                <img src={imagenes.prim3} className="d-block w-100" alt="imagenes proyecto\Escáner_20171203 (13).png"/>
+                <img src={prim3} className="d-block w-100" alt="imagenes proyecto\Escáner_20171203 (13).png"/>
               </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

@@ -1,5 +1,7 @@
 import '../css/sectionInicial.css'
-import imagenes from './imagenes'
+import jardin1 from '../imagenes proyecto/jardin1.jpeg'
+import jardin2 from '../imagenes proyecto/jardin2.jpeg'
+import jardin3 from '../imagenes proyecto/jardin3.jpeg'
 function SectionInicial(props){
     return(
 <section className='color2'>
@@ -9,13 +11,13 @@ function SectionInicial(props){
             <div id="carouselExampleControls" className="carousel slide className= col-md-6 float-md-end mb-3 ms-md-3" data-bs-ride="carousel">
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <img src={imagenes.jardin1} className="d-block w-100" />
+                  <img src={jardin1} className="d-block w-100" />
                 </div>
                 <div className="carousel-item">
-                  <img src={imagenes.jardin2} className="d-block w-100"/>
+                  <img src={jardin2} className="d-block w-100"/>
                 </div>
                 <div className="carousel-item">
-                  <img src={imagenes.jardin3} className="d-block w-100" alt="imagenes proyecto\Escáner_20171203 (13).png"/>
+                  <img src={jardin3} className="d-block w-100" alt="imagenes proyecto\Escáner_20171203 (13).png"/>
                 </div>
               </div>
               <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

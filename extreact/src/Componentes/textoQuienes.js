@@ -1,5 +1,7 @@
 import '../css/QuienesSomos.css'
-import imagenes from './imagenes'
+import nosotros from '../imagenes proyecto/nosotros.png'
+import nosotros1 from '../imagenes proyecto/nosotros1.png'
+import nosotros2 from '../imagenes proyecto/nosotros2.jpg'
 function TextoQuienes (){
     return(
         <section className='color2'>
@@ -9,13 +11,13 @@ function TextoQuienes (){
             <div id="carouselExampleControls" className="carousel slide className= col-md-6 float-md-end mb-3 ms-md-3" data-bs-ride="carousel">
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <img src={imagenes.nosotros} className="d-block w-100" />
+                  <img src={nosotros} className="d-block w-100" />
                 </div>
                 <div className="carousel-item">
-                  <img src={imagenes.nosotros1} className="d-block w-100"/>
+                  <img src={nosotros1} className="d-block w-100"/>
                 </div>
                 <div className="carousel-item">
-                  <img src={imagenes.nosotros2} className="d-block w-100" alt="imagenes proyecto\Escáner_20171203 (13).png"/>
+                  <img src={nosotros2} className="d-block w-100" alt="imagenes proyecto\Escáner_20171203 (13).png"/>
                 </div>
               </div>
               <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

@@ -1,5 +1,7 @@
 import '../css/sectionPrincipal.css'
-import imagenes from './imagenes'
+import princ from '../imagenes proyecto/20190508_104728.jpg'
+import princ1 from '../imagenes proyecto/Escáner_20171203 (10).png'
+import princ2 from '../imagenes proyecto/sec3.jpeg'
 function sectionPrincipal (){
 return(
     <section id="body" className="color2">
@@ -12,19 +14,19 @@ return(
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active" data-bs-interval="10000">
-          <img src={imagenes.carrouselPrin} className="d-block w-100" alt="20190820_103124.jpg"/>
+          <img src={princ} className="d-block w-100" alt="20190820_103124.jpg"/>
           <div className="carousel-caption d-none d-md-block">
             <h5 className="h5">Una familia</h5>
           </div>
         </div>
         <div className="carousel-item" data-bs-interval="2000">
-          <img src={imagenes.carrouselPrin1}/>
+          <img src={princ1}/>
           <div className="carousel-caption d-none d-md-block">
             <h5 className="h5">Una hermandad</h5>
           </div>
         </div>
         <div className="carousel-item">
-          <img src={imagenes.carrouselPrin2}/>
+          <img src={princ2}/>
           <div className="carousel-caption d-none d-md-block">
             <h5 className="h5">Una vocacion...</h5>
           </div>

@@ -1,5 +1,7 @@
 import '../css/QuienesSomos.css'
-import imagenes from './imagenes'
+import personalAdmin from '../imagenes proyecto/admin.jpg'
+import personalPrim from '../imagenes proyecto/prim.jpg'
+import personalEspec from '../imagenes proyecto/espec.jpg'
 function FotoQuienes (){
     return(
         <section>
@@ -11,19 +13,19 @@ function FotoQuienes (){
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-              <img src={imagenes.personal} class="d-block w-100"/>
+              <img src={personalAdmin} class="d-block w-100"/>
               <div class="carousel-caption d-none d-md-block">
                 <h5 class="h4">Personal administrativo</h5>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src={imagenes.personal1} class="d-block w-100"/>
+              <img src={personalPrim} class="d-block w-100"/>
               <div class="carousel-caption d-none d-md-block">
                 <h5 class="h4">Personal primario</h5>
               </div>
             </div>
             <div class="carousel-item">
-              <img src={imagenes.personal2} class="d-block w-100" alt="imagenes\Plantel docentes especiales.jpg"/>
+              <img src={personalEspec} class="d-block w-100" alt="imagenes\Plantel docentes especiales.jpg"/>
               <div class="carousel-caption d-none d-md-block">
                 <h5 class="h4">Personal secundario</h5>
               </div>

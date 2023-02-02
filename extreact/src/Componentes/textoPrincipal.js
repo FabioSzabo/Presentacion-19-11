@@ -1,7 +1,9 @@
 import { useEffect, useRef } from 'react';
 import React from 'react';
 import '../css/sectionPrincipal.css';
-import imagenes from './imagenes';
+import principal1 from '../imagenes proyecto/principal.png';
+import principal2 from '../imagenes proyecto/principal2.png'
+import principal3 from '../imagenes proyecto/principal3.png'
 function TextoP (){
   const Referencias=useRef()
   useEffect=()=>{
@@ -21,13 +23,13 @@ function TextoP (){
               <div id="carouselExampleControls" className="carousel slide className= col-md-6 float-md-end mb-3 ms-md-3" data-bs-ride="carousel">
                 <div className="carousel-inner">
                   <div className="carousel-item active">
-                    <img src={imagenes.niveles2} className="d-block w-100" alt="imagenes proyecto\Escáner_20171203 (12).png"/>
+                    <img src={principal1} className="d-block w-100" alt="imagenes proyecto\Escáner_20171203 (12).png"/>
                   </div>
                   <div className="carousel-item">
-                    <img src={imagenes.nosotros2} className="d-block w-100" alt="imagenes proyecto\Escáner_20171203 (14).png"/>
+                    <img src={principal2} className="d-block w-100" alt="imagenes proyecto\Escáner_20171203 (14).png"/>
                   </div>
                   <div className="carousel-item">
-                    <img src={imagenes.carrouselPrin} className="d-block w-100" alt="imagenes proyecto\Escáner_20171203 (13).png"/>
+                    <img src={principal3} className="d-block w-100" alt="imagenes proyecto\Escáner_20171203 (13).png"/>
                   </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

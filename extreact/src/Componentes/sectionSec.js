@@ -1,5 +1,7 @@
 import '../css/sectionSec.css'
-import imagenes from './imagenes'
+import sec1 from '../imagenes proyecto/sec1.jpeg'
+import sec2 from '../imagenes proyecto/sec2.jpeg'
+import sec3 from '../imagenes proyecto/sec3.jpeg'
 function sectionSec(props){
     return(
       <section className='color2'>
@@ -9,13 +11,13 @@ function sectionSec(props){
             <div id="carouselExampleControls" className="carousel slide className= col-md-6 float-md-end mb-3 ms-md-3" data-bs-ride="carousel">
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <img src={imagenes.sec1} className="d-block w-100" />
+                  <img src={sec1} className="d-block w-100" />
                 </div>
                 <div className="carousel-item">
-                  <img src={imagenes.sec2} className="d-block w-100"/>
+                  <img src={sec2} className="d-block w-100"/>
                 </div>
                 <div className="carousel-item">
-                  <img src={imagenes.sec3} className="d-block w-100" alt="imagenes proyecto\Escáner_20171203 (13).png"/>
+                  <img src={sec3} className="d-block w-100" alt="imagenes proyecto\Escáner_20171203 (13).png"/>
                 </div>
               </div>
               <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

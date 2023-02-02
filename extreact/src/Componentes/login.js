@@ -1,6 +1,7 @@
 import '../css/Login.css'
-import {useEffect, useRef, useState} from "react"
+import {useRef, useState} from "react"
 import { registro, login } from '../Service/apiCall';
+import { Link } from 'react-router-dom'
 function Login(){
 
 
@@ -76,13 +77,17 @@ function register(){
 
     const enviar =(event)=>{
         event.preventDefault();
-        console.log(login)
        const ObtenerAlumno=()=>{
-        login(formValue).then(()=>{
-               console.log("Ingresado");}).catch((error)=>alert("Alumno no registrado"))
+        login(formValue).then((ingreso,firstname)=>{
+            const logueado= ingreso
+            if(logueado.firstname===firstname){alert("Contraseña incorrecta")}
+            {alert("Contraseña correcta")}})
+               .catch((error)=>alert("Alumno no registrado"))
        }
            ObtenerAlumno();
        }
+    
+
 
     return(
         <section>
