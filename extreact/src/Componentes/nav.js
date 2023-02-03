@@ -1,20 +1,9 @@
 import '../css/nav.css';
 import { Link } from 'react-router-dom';
-import { useRef,useEffect } from 'react';
 
 function Navbar(){
-  const navbar =useRef()
-  useEffect=()=>{
-    if(localStorage.getItem("darkmode") === 1){
-      navbar.current.classList.remove("color1");
-      navbar.current.classList.add("navnew");
-    }else{
-      navbar.current.classList.remove("navnew");
-      navbar.current.classList.add("color1");
-    }
-  }
     return(
-        <nav ref={navbar} id="navbar" className="navbar color1">
+        <nav id="navbar" className="navbar color1">
       <div className="container-fluid">
        <Link className="navbar-brand" to="/home">Inicio</Link> 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

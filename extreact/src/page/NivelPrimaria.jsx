@@ -9,7 +9,6 @@ function NivelPrimario(){
         <Titulo/>
         <Navbar/>
         <SectionPrim/>
-        <Videoprimaria/>
         <Footer/>
         </>
     )

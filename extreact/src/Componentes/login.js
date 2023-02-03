@@ -1,7 +1,6 @@
 import '../css/Login.css'
 import {useRef, useState} from "react"
 import { registro, login } from '../Service/apiCall';
-import { Link } from 'react-router-dom'
 function Login(){
 
 
@@ -81,7 +80,9 @@ function register(){
         login(formValue).then((ingreso,firstname)=>{
             const logueado= ingreso
             if(logueado.firstname===firstname){alert("Contraseña incorrecta")}
-            {alert("Contraseña correcta")}})
+            else{
+           alert("Contraseña correcta")
+            }})
                .catch((error)=>alert("Alumno no registrado"))
        }
            ObtenerAlumno();

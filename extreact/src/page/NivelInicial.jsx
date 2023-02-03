@@ -10,7 +10,6 @@ function NivelInicial(){
     <Titulo />
     <Navbar />
     <SectionInicial />
-    <Videojardin/>
     <Footer />
     </>
     )

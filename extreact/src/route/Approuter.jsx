@@ -14,12 +14,12 @@ return(
         <Route exact path="/home" component={PagPrinc}/>
         <Route exact path="/campus" component={PagMat}/>
         <Route exact path="/" component={PagPrinc}/>
-        <Route exact path="/contacto" component={PagContacto}/>
-        <Route exact path="/login" component={PagCampus}/>
-        <Route exact path="/nosotros" component={PagQuienes}/>
         <Route exact path="/jardin" component={NivelInicial}/>
         <Route exact path="/primaria" component={NivelPrimario}/>
         <Route exact path="/secundaria" component={NivelSecundario}/>
+        <Route exact path="/contacto" component={PagContacto}/>
+        <Route exact path="/login" component={PagCampus}/>
+        <Route exact path="/nosotros" component={PagQuienes}/>
     </Switch>
 </Router>
 )
