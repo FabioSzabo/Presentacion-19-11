@@ -4,6 +4,10 @@
 .containerniveles{
     display: flex;
 }
+.enlace{
+  color: white ;
+  text-align: center;
+}
 .nivel {
   flex: 33%; 
   text-align: center;
