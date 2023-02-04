@@ -10,6 +10,7 @@ return(
     <Titulo/>
     <Navbar/>
     <SectionSec/>
+    <Videosecundaria/>
     <Footer/>
     </>
 )

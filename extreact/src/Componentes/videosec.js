@@ -1,8 +1,10 @@
 import React from 'react';
-import  ReactPlayer  from  'react-player'
+import video from '../videos/secundaria.mp4'
 function Videosecundaria(){
     return(
-       <ReactPlayer url={"https://youtube.com/shorts/9EWg9aNjeNA"} controls playing volume={0.5} loop width="100%" height="100%"/>
+        <video width="100%" height="100%" controls playing volume={0.5} loop>
+        <source src={video} type="video/mp4" />
+        </video> 
     )
     
 }

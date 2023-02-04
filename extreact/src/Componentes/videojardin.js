@@ -1,9 +1,10 @@
 import React from "react";
-import ReactPlayer from "react-player";
-function Videojardin(){
+import video from '../videos/VideoJardin.mp4'
+function VideoJardin(){
     return(
-<ReactPlayer url={"https://youtu.be/zUReOEYDiew"} />
+        <video width="100%" height="100%" controls playing volume={0.5} loop>
+        <source src={video} type="video/mp4" />
+        </video>  
     )
-    
 }
-export default Videojardin;
+export default VideoJardin
